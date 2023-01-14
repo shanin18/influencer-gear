@@ -103,6 +103,7 @@ button > i{
     align-items: center;
     gap: 25px;
     padding: 25px 0;
+    position: relative;
 }
 .logo{
     flex-shrink: 0;
@@ -133,6 +134,27 @@ button > i{
     color: #3A3A3A;
 }
 
+.shopping-cart{
+    position: absolute;
+    right: -40px;
+}
+
+.shopping-cart a{
+    font-size: 20px;
+    color: #3A3A3A;
+}
+
+.hamburger{
+    display: none;
+}
+
+.line{
+    width: 20px;
+    height: 2px;
+    background-color:#3A3A3A;
+    margin-bottom:5px;
+}
+
 /* banner styles */
 .banner{
     display: flex;
@@ -153,7 +175,7 @@ button > i{
 
 .banner-image{
     text-align: center;
-    width: 50%;
+    width: 35%;
     background: url("../assets/images/Circle\ design.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -290,21 +312,37 @@ button > i{
 
     .nav{
         flex-direction: column;
+        position: relative;
     }
+    .menu{
+        display:none;
+    }
+
+    .shopping-cart{
+        position: absolute;
+        right: 0;
+    }
+
+    .hamburger{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 30px;
+    }
+
     .logo h2 {
         font-size: 16px;
     }
-    .menu{
-        gap: 15px;
-        margin-top: 15px;
-        flex-wrap: wrap;
-    }
+
     .banner{
         flex-direction: column-reverse;
         text-align: center;
     }
+
+    .banner-image{
+        width: 80%;
+    }
     .banner-content,
-    .banner-image,
     .featured-content,
     .featured-image
     {
@@ -345,6 +383,23 @@ button > i{
 @media screen and (min-width: 688px) and (max-width: 992px){
     .nav{
         flex-direction: column;
+        position: relative;
+    }
+    .menu{
+        display:none;
+    }
+
+    .shopping-cart{
+        position: absolute;
+        right: 0;
+        top: 30px;
+    }
+
+    .hamburger{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 35px;
     }
 
     .banner-content,
