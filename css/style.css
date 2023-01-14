@@ -1,0 +1,199 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* common class */
+.container-primary,
+.container-secondary,
+.container-tertiary{
+    margin: 0 auto;
+}
+.container-primary{
+    width: 80%;
+}
+.container-secondary{
+    width: 75%;
+}
+.container-tertiary{
+    width: 70%;
+}
+
+.text-primary{
+    font-weight: 600;
+    font-size: 16px;
+    color: #3A3A3A;
+    margin: 16px 0;
+}
+
+.text-secondary{
+    font-weight: 700;
+    font-size: 14px;
+    color: #787885;
+}
+
+.btn-primary, 
+.btn-secondary,
+.btn-tertiary{
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+}
+
+.btn-primary{
+    background: #E02C6D;
+    color: #FFFFFF;
+    border-radius: 41px;
+}
+
+.btn-secondary{
+    background-color: transparent;
+    color: #E02C6D;
+}
+
+.btn-tertiary{
+    background: #E02C6D;
+    color: #FFFFFF;
+}
+
+section{
+    margin-bottom: 100px;
+}
+
+/* header section styles */
+.header{
+    padding: 0 25px ;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.logo h2{
+    font-weight: 700;
+    font-size: 24px;
+    color: #3A3A3A;
+}
+
+.menu{
+    display: flex;
+    gap: 25px;
+}
+
+.menu li{
+    list-style: none;
+    flex-shrink: 0;
+}
+
+.menu li a{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #3A3A3A;
+}
+
+/* banner styles */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-content{
+    width: 40%;
+}
+
+.banner-content h1{
+    font-weight: 700;
+    font-size: 52px;
+    color: #3A3A3A;
+}
+
+.banner-image{
+    text-align: center;
+    width: 50%;
+    background: url("../assets/images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 50px 0;
+}
+
+.banner-image img{
+    width: 100%;
+    padding: 30px 30px 30px 0;
+}
+
+/* brand section styles */
+.brand{
+    margin-top: 70px;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+.brand-logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 35px 60px;
+}
+
+
+
+
+
+/* media queries */
+@media screen and (max-width: 688px) {
+    .container-primary{
+        width: 100%;
+    }
+    .container-secondary{
+        width: 90%;
+    }
+    .nav{
+        flex-direction: column;
+    }
+    .logo h2 {
+        font-size: 16px;
+    }
+    .menu{
+        gap: 15px;
+        margin-top: 25px;
+        flex-wrap: wrap;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .banner-content{
+        width: 100%;
+    }
+    .banner-content h1 {
+        font-size: 28px
+    }
+
+    .text-primary{
+        font-size: 14px;
+    }
+
+    .banner-image{
+        width: 100%;
+    }
+
+}
+
+
